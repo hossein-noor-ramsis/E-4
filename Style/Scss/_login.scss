@@ -1,0 +1,96 @@
+/* === start of variable === */
+$color-primary: rgb(255, 255, 255);
+$color-secondary: rgb(0, 0, 0);
+$bg-red: rgb(255, 95, 90);
+$bg-blur: rgba(255, 255, 255, 0.1);
+$bg-green: rgb(42, 202, 68);
+/* === end of variable === */
+/* === start of section === */
+.login-page {
+    & {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+    }
+
+    .red {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-130%, -160%);
+        background: linear-gradient(to top left, rgb(255, 95, 90), rgb(129, 28, 24));
+        height: 10rem;
+        width: 10rem;
+        border-radius: 10rem;
+    }
+
+    .green {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(30%, 90%);
+        background: linear-gradient(to bottom left, rgb(42, 202, 68), rgb(24, 117, 39));
+        height: 10rem;
+        width: 10rem;
+        border-radius: 10rem;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $bg-blur;
+        min-width: 320px;
+        padding: 2rem;
+        margin: 1rem;
+        border-radius: 0.5rem;
+        backdrop-filter: blur(0.5rem);
+        z-index: 10;
+        border: 1px solid rgba(127, 127, 127, 0.808);
+    }
+
+    h2 {
+        padding: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    input,
+    label {
+        display: block;
+        width: 100%;
+    }
+
+    input {
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    .btn {
+        margin: 1rem 0rem;
+    }
+
+    h2,
+    label {
+        color: $color-primary;
+    }
+
+    input:not(.btn) {
+        background-color: $bg-blur;
+        border-radius: 0.4rem;
+        border: none;
+    }
+
+    ::placeholder {
+        color: $color-primary;
+    }
+}
+/* === end of section === */
+/* === start of function === */
+
+/* === end of function === */

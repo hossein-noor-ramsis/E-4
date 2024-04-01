@@ -1,0 +1,131 @@
+/* === start of variable === */
+/* === end of variable === */
+/* === start of base === */
+@font-face {
+  font-family: name;
+  src: url(../Font/name.ttf) format(ttf);
+  src: url(../Font/name.eot) format(eot), url(../Font/name.woff) format(woff), url(../Font/name.woff2) format(woff2);
+}
+@media screen and (min-width: 2000px) {
+  html {
+    display: flex;
+    justify-content: center;
+  }
+}
+body {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  max-width: 2000px;
+  min-width: 450px;
+}
+
+:root {
+  direction: ltr;
+  font-family: name;
+  font-size: 16px;
+}
+
+/* === end of base === */
+/* === start of function === */
+/* === end of function === */
+/* === start of variable === */
+/* === end of variable === */
+/* === start of header === */
+/* === end of header === */
+/* === start of function === */
+/* === end of function === */
+/* === start of variable === */
+/* === end of variable === */
+/* === start of section === */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+.login-page .red {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-130%, -160%);
+  background: linear-gradient(to top left, rgb(255, 95, 90), rgb(129, 28, 24));
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10rem;
+}
+.login-page .green {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(30%, 90%);
+  background: linear-gradient(to bottom left, rgb(42, 202, 68), rgb(24, 117, 39));
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10rem;
+}
+.login-page .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  min-width: 320px;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  z-index: 10;
+  border: 1px solid rgba(127, 127, 127, 0.808);
+}
+.login-page h2 {
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+.login-page input,
+.login-page label {
+  display: block;
+  width: 100%;
+}
+.login-page input {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.login-page .btn {
+  margin: 1rem 0rem;
+}
+.login-page h2,
+.login-page label {
+  color: rgb(255, 255, 255);
+}
+.login-page input:not(.btn) {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.4rem;
+  border: none;
+}
+.login-page ::-moz-placeholder {
+  color: rgb(255, 255, 255);
+}
+.login-page ::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+/* === end of section === */
+/* === start of function === */
+/* === end of function === */
+/* === start of variable === */
+/* === end of variable === */
+/* === start of section === */
+/* === end of section === */
+/* === start of function === */
+/* === end of function === */
+/* === start of variable === */
+/* === end of variable === */
+/* === start of footer === */
+/* === end of footer  === */
+/* === start of function === */
+/* === end of function === *//*# sourceMappingURL=style.css.map */
