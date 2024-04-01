@@ -58,31 +58,36 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(30%, 90%);
+  transform: translate(30%, 80%);
   background: linear-gradient(to bottom left, rgb(42, 202, 68), rgb(24, 117, 39));
   height: 10rem;
   width: 10rem;
   border-radius: 10rem;
 }
 .login-page .login {
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
   min-width: 320px;
+  height: 400px;
   padding: 2rem;
-  margin: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
-  z-index: 10;
-  border: 1px solid rgba(127, 127, 127, 0.808);
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
 }
 .login-page h2 {
   padding: 0.5rem;
   width: 100%;
   text-align: center;
+}
+.login-page h2,
+.login-page label {
+  color: rgb(255, 255, 255);
 }
 .login-page input,
 .login-page label {
@@ -95,23 +100,22 @@ body {
   margin-bottom: 1.5rem;
   width: 100%;
 }
-.login-page .btn {
-  margin: 1rem 0rem;
-}
-.login-page h2,
-.login-page label {
+.login-page ::-moz-placeholder {
   color: rgb(255, 255, 255);
+  font-weight: lighter;
+}
+.login-page ::placeholder {
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+}
+.login-page .btn {
+  margin-top: 1.5rem;
+  margin-bottom: 0rem;
 }
 .login-page input:not(.btn) {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 0.4rem;
   border: none;
-}
-.login-page ::-moz-placeholder {
-  color: rgb(255, 255, 255);
-}
-.login-page ::placeholder {
-  color: rgb(255, 255, 255);
 }
 
 /* === end of section === */

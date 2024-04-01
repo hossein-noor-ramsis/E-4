@@ -30,7 +30,7 @@ $bg-green: rgb(42, 202, 68);
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(30%, 90%);
+        transform: translate(30%, 80%);
         background: linear-gradient(to bottom left, rgb(42, 202, 68), rgb(24, 117, 39));
         height: 10rem;
         width: 10rem;
@@ -38,18 +38,19 @@ $bg-green: rgb(42, 202, 68);
     }
 
     .login {
+        z-index: 10;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: $bg-blur;
         min-width: 320px;
+        height: 400px;
         padding: 2rem;
-        margin: 1rem;
+        border: 2px solid rgba(255, 255, 255, 0.1);
         border-radius: 0.5rem;
+        background-color: $bg-blur;
         backdrop-filter: blur(0.5rem);
-        z-index: 10;
-        border: 1px solid rgba(127, 127, 127, 0.808);
+        box-shadow: 0rem 0rem 2rem rgba($color: #000000, $alpha: 0.5);
     }
 
     h2 {
@@ -57,7 +58,12 @@ $bg-green: rgb(42, 202, 68);
         width: 100%;
         text-align: center;
     }
-
+    
+    h2,
+    label {
+        color: $color-primary;
+    }
+    
     input,
     label {
         display: block;
@@ -71,23 +77,20 @@ $bg-green: rgb(42, 202, 68);
         width: 100%;
     }
 
-    .btn {
-        margin: 1rem 0rem;
-    }
-
-    h2,
-    label {
+    ::placeholder {
         color: $color-primary;
+        font-weight: lighter;
     }
-
+    
+    .btn {
+        margin-top: 1.5rem;
+        margin-bottom: 0rem;
+    }
+    
     input:not(.btn) {
         background-color: $bg-blur;
         border-radius: 0.4rem;
         border: none;
-    }
-
-    ::placeholder {
-        color: $color-primary;
     }
 }
 /* === end of section === */
