@@ -16,7 +16,7 @@ body {
   display: grid;
   grid-template-rows: repeat(3, auto);
   max-width: 2000px;
-  min-width: 400px;
+  min-width: 420px;
 }
 
 :root {
